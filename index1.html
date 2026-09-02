@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madison Murad - Portfolio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --pink-bg: #ffe4e9;
+            --pink-card: #ffffff;
+            --pink-accent: #ff6699;
+            --pink-dark: #e04374;
+            --pink-light-badge: #ffd0dc;
+            --text-color: #4a3e3e;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: var(--pink-bg);
+            color: var(--text-color);
+        }
+
+        h1, h2, h3, .navbar-brand, .nav-link {
+            font-family: 'Fredoka', sans-serif;
+        }
+
+        /* Top Navbar */
+        .navbar-pink {
+            background-color: #ff85a2;
+        }
+        .navbar-pink .nav-link {
+            color: white !important;
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin: 0 5px;
+        }
+        .navbar-pink .nav-link:hover {
+            color: #ffe4e9 !important;
+        }
+
+        /* Main Container Card */
+        .portfolio-card {
+            background-color: var(--pink-card);
+            border-radius: 24px;
+            box-shadow: 0 10px 25px rgba(255, 102, 153, 0.15);
+            padding: 2rem;
+            max-width: 850px;
+            margin: 2rem auto;
+        }
+
+        /* Banner Header */
+        .hero-banner {
+            background: linear-gradient(135deg, #ff6699, #ff85a2);
+            color: white;
+            border-radius: 18px;
+            padding: 2.5rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(255, 102, 153, 0.2);
+        }
+
+        .u-logo {
+            width: 70px;
+            margin-top: 15px;
+            filter: drop-shadow(0px 3px 5px rgba(0,0,0,0.1));
+        }
+
+        /* Section Titles */
+        .section-title {
+            color: var(--pink-dark);
+            font-size: 1.6rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 1rem;
+        }
+
+        /* Skill Badges */
+        .badge-pink {
+            background-color: var(--pink-light-badge);
+            color: var(--pink-dark);
+            font-size: 0.95rem;
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 20px;
+            border: 1px solid #fca5bb;
+        }
+
+        /* Table Styling */
+        .custom-table {
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid #ffd0dc;
+        }
+        .custom-table thead {
+            background-color: #ffe4e9;
+            color: var(--pink-dark);
+        }
+        .custom-table th, .custom-table td {
+            padding: 12px 16px;
+        }
+
+        /* Contact Links */
+        .contact-list a {
+            color: var(--pink-dark);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .contact-list a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            color: white;
+            background-color: #ff85a2;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-pink sticky-top">
+        <div class="container justify-content-center">
+            <div class="navbar-nav flex-row gap-3">
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#resume">Resume</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        <div class="portfolio-card my-4">
+
+            <!-- Banner Section -->
+            <header class="hero-banner mb-4">
+                <h1 class="display-4 fw-bold mb-1">Madison Murad</h1>
+                <p class="fs-5 mb-0">Information Systems Student | University of Utah</p>
+                <!-- Utah Block U Logo -->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/University_of_Utah_U_logo.svg" alt="University of Utah Logo" class="u-logo">
+            </header>
+
+            <!-- Grid Content: About Me & Skills -->
+            <div class="row g-4 mb-4">
+                <!-- About Me -->
+                <section id="about" class="col-md-6">
+                    <h2 class="section-title"> About Me</h2>
+                    <p>
+                        Madison Murad is a passionate Information Systems student at the 
+                        University of Utah. Focused on software engineering, data analytics, 
+                        and AI business solutions.
+                    </p>
+                </section>
+
+                <!-- Skills -->
+                <section id="skills" class="col-md-6">
+                    <h2 class="section-title">🌸 Skills</h2>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge-pink">HTML & CSS</span>
+                        <span class="badge-pink">Java</span>
+                        <span class="badge-pink">Python</span>
+                        <span class="badge-pink">MySQL</span>
+                        <span class="badge-pink">Git & GitHub</span>
+                        <span class="badge-pink">Data Analytics</span>
+                        <span class="badge-pink">AI Prompt Engineering</span>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Projects Section -->
+            <section id="projects" class="mb-4">
+                <h2 class="section-title">Projects</h2>
+                <div class="table-responsive">
+                    <table class="table custom-table table-hover align-middle mb-0">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="fw-bold">AI Business Analysis</td>
+                                <td>Analyze business data using ChatGPT</td>
+                                <td>2026-09-01</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Data Visualization</td>
+                                <td>Dashboard built with Tableau</td>
+                                <td>2026-09-02</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Web Development</td>
+                                <td>Responsive Bootstrap website</td>
+                                <td>2026-09-03</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Resume & Contact Section -->
+            <div class="row g-4">
+                <section id="resume" class="col-md-6">
+                    <h2 class="section-title">📄 Resume</h2>
+                    <p class="mb-0">Resume coming soon!</p>
+                </section>
+
+                <section id="contact" class="col-md-6">
+                    <h2 class="section-title">💕 Contact</h2>
+                    <ul class="list-unstyled contact-list mb-0">
+                        <li><strong>Email:</strong> <a href="mailto:madison.murad@utah.edu">madison.murad@utah.edu</a></li>
+                        <li><strong>GitHub:</strong> <a href="https://github.com" target="_blank">GitHub Profile</a></li>
+                    </ul>
+                </section>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p class="mb-0">&copy; 2026 Madison Murad. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/bootstrap.bundle.min.js"></script>
+</body>
+</html>
