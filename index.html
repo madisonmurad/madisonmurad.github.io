@@ -220,4 +220,148 @@
             background-color: #ffe4e9;
             color: var(--pink-dark);
         }
-        .custom-
+        .custom-table th {
+            font-weight: 700;
+        }
+        .custom-table tbody tr:hover {
+            background-color: #fffafb;
+        }
+
+        /* --- Links --- */
+        a {
+            color: var(--pink-dark);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #ff6699;
+            text-decoration: underline;
+        }
+
+        /* --- Footer --- */
+        .portfolio-footer {
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid #ffd0dc;
+            text-align: center;
+            color: #8c7e7e;
+            font-size: 0.9rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Main Container Card -->
+    <div class="portfolio-container">
+
+        <!-- Top Pink Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-pink mb-4">
+            <div class="container justify-content-center">
+                <div class="navbar-nav flex-row gap-3">
+                    <a class="nav-link" href="#about">About Me</a>
+                    <a class="nav-link" href="#skills">Skills</a>
+                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#resume">Resume</a>
+                    <a class="nav-link" href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Banner Header Section -->
+        <header class="hero-banner">
+            <h1 class="display-4 fw-bold">Madison Murad</h1>
+            <p class="fs-5 mb-0">Information Systems Student | University of Utah</p>
+            
+            <!-- Replacing failing image with a red and white U placeholder -->
+            <div class="u-logo-placeholder" title="University of Utah Logo">U</div>
+            <!-- To use an image later, uncomment this line and replace the path: -->
+            <!-- <img src="path/to/utah-u-logo.png" alt="University of Utah Logo" class="u-logo-placeholder"> -->
+        </header>
+
+        <!-- About Me and Skills Row -->
+        <div class="row g-4 mb-4">
+            <!-- About Me -->
+            <section id="about" class="col-md-7">
+                <h2 class="section-title">About Me</h2>
+                <p>
+                    Madison Murad is a pustom furihed information
+                    University of Utah. Moderns/ezrtven engineering
+                    and fuersine headings.
+                </p>
+            </section>
+
+            <!-- Skills (Pills, but with placeholder text) -->
+            <section id="skills" class="col-md-5">
+                <h2 class="section-title">Skills</h2>
+                <div class="d-flex flex-wrap">
+                    <span class="skill-pill">Apnox</span>
+                    <span class="skill-pill">Java</span>
+                    <span class="skill-pill">CSS</span>
+                    <span class="skill-pill">Robost</span>
+                    <span class="skill-pill">Lamet</span>
+                    <span class="skill-pill">System</span>
+                    <span class="skill-pill">MySQL</span>
+                    <span class="skill-pill">Python3</span>
+                    <span class="skill-pill">Global</span>
+                </div>
+            </section>
+        </div>
+
+        <!-- Projects Table -->
+        <section id="projects" class="mb-4">
+            <h2 class="section-title">Projects</h2>
+            <div class="table-responsive">
+                <table class="table custom-table table-striped table-hover align-middle mb-0">
+                    <thead class="table-pink">
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Table headings</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="fw-bold">Tamizar Project 1</td>
+                            <td>Cyatomr Designs</td>
+                            <td>2021-12-30</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Fulnice Project 2</td>
+                            <td>Custom Design</td>
+                            <td>2019-01-20</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Madison Projet 3</td>
+                            <td>TUR Project</td>
+                            <td>2019-07-10</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Resume & Contact Row -->
+        <div class="row g-4">
+            <section id="resume" class="col-md-6">
+                <h2 class="section-title">Resume</h2>
+                <p class="mb-0">Resume coming soon.</p>
+            </section>
+
+            <section id="contact" class="col-md-6">
+                <h2 class="section-title">Contact</h2>
+                <p class="mb-0"><strong>Email:</strong> <a href="mailto:mca@mateonurad.com">mca@mateonurad.com</a></p>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer class="portfolio-footer">
+            <p class="mb-0">&copy; 2026 Madison Murad. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="[https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/bootstrap.bundle.min.js](https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/bootstrap.bundle.min.js)"></script>
+</body>
+</html>
